@@ -211,7 +211,7 @@ ant =》maven =》gradle
     6. install：安装
     7. deploy：部署
 
-- report
+- audit
 
     1. lint
     2. test
@@ -235,6 +235,8 @@ ant =》maven =》gradle
 默认会执行生命周期的每个阶段，但也可以指定执行某个阶段，例如：`unitool relese:build` 这个命令会执行 release 的生命周期至 release 阶段。
 
 #### 任务
+
+![unitool-task.jpg](./unitool-task.jpg)
 
 任务是对生命周期的扩展，它可以独立于生命周期运行，而且也可以绑定到特定的生命周期的某个阶段中，例如：lint（代码审查）可以绑定到 release 的 validate 阶段。默认约定了以下任务：
 
